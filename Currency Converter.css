@@ -1,0 +1,117 @@
+body {
+  margin: 50px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #5ee7df, #b490ca);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 2rem 50px 2rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1, h2 {
+  color: #4b3f72;
+}
+
+.converter input, .converter select{
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.convert{
+    background-color: indigo;
+    font-size: 20px;
+    font-weight: 550;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+
+.converter button {
+  background-color: #4b3f72;
+  color: white;
+  border: none;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.convert:hover{
+    background-color: rgb(57, 1, 98);
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+}
+
+.chart-container {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+}
+
+#history {
+  text-align: left;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+
+#history li {
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+button.clear-history {
+  background-color: indigo;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 25px;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.clear-history:hover {
+  background-color: rgb(64, 1, 110);
+}
+
+button.clear-history:focus {
+  outline: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="Currency Converter.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/awesomplete@1.1.5/awesomplete.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Currency Converter</h1>
+    <div class="converter">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <div class="currency-inputs">
+        <input type="text" id="fromCurrency" placeholder="From Currency" class="awesomplete" />
+        <span>➡️</span>
+        <input type="text" id="toCurrency" placeholder="To Currency" class="awesomplete" />
+      </div>
+      <button onclick="convertCurrency()" class="convert">Convert</button>
+      <div id="result"></div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="rateChart"></canvas>
+    </div>
+
+    <h2>📜 Conversion History</h2>
+    <ul id="history"></ul>
+    <button onclick="clearHistory()" class="clear-history">Clear History</button>
+  </div>
+
+  <script src="Currency Converter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/awesomplete@1.1.5/awesomplete.min.js"></script>
+</body>
+</html>
